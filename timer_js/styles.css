@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body, html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 17, 55);
+}
+
+.container{
+    width: 380px;
+    background-color: rgb(29, 28, 64);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 50px 20px rgba(0,0,0, 0.4);
+}
+
+h1{
+    margin: 1.3rem 0;
+    font-size: 2.8rem;
+    color: wheat;
+    text-transform: uppercase;
+}
+
+input{
+    width: 200px;
+    height: 2rem;
+    margin: 0.3rem 0;
+    border-style: none;
+    border-radius: 0.3rem;
+}
+
+.buttons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    width: 90px;
+    height: 30px;
+    background-color: rgba(36, 139, 36, 0.937);
+    border-style: none;
+    border-radius: 0.3rem;
+    margin: 2.4rem 0;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(36, 139, 36, 0.7);
+}
+
+.restart:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 5px rgba(255, 64, 0, 0.7);
+}
+
+.restart{
+    background-color: rgba(255, 64, 0, 0.906);
+}
+
+#timer{
+    color: wheat;
+    margin-bottom: 1rem;
+}

@@ -2,20 +2,24 @@
 <html lang="en">
     <head>
         <title> Timer studio </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1 id="ciao">Timer</h1>
-        <form>
-            <label for="ore">Ore:</label>
-            <input type="text" id="ore" name="ore"><br>
-            <label for="minuti">Minuti:</label>
-            <input type="text" id="minuti" name="minuti"><br>
-            <label for="secondi", id="secLabel">Secondi:</label>
-            <input type="text" id="secondi" name="secondi"></br>
-        </form>
-        <button id="bottone" onclick="startTimer()">start</button>
-        <button onclick="restart()">restart</button>
-        <h2 id="timer"></h2>
+        <div class="container">
+            <h1 id="ciao">Timer</h1>
+            <form>
+                <input type="number" id="ore" name="ore" placeholder="Ore"><br>
+                <input type="number" id="minuti" name="minuti" placeholder="Minuti"><br>
+                <input type="number" id="secondi" name="secondi" placeholder="Secondi"></br>
+            </form>
+            <div class="buttons">
+                <button class="btn" id="bottone" onclick="startTimer()">start</button>
+                <button class="btn restart" onclick="restart()">restart</button>
+            </div>
+            <h2 id="timer"></h2>
+        </div>
+
         <script src="app.js"></script>
     </body>
 </html>
