@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Timer studio </title>
+    </head>
+    <body>
+        <h1 id="ciao">Timer</h1>
+        <form>
+            <label for="ore">Ore:</label>
+            <input type="text" id="ore" name="ore"><br>
+            <label for="minuti">Minuti:</label>
+            <input type="text" id="minuti" name="minuti"><br>
+            <label for="secondi", id="secLabel">Secondi:</label>
+            <input type="text" id="secondi" name="secondi"></br>
+        </form>
+        <button id="bottone" onclick="startTimer()">start</button>
+        <button onclick="restart()">restart</button>
+        <h2 id="timer"></h2>
+        <script src="app.js"></script>
+    </body>
+</html>
