@@ -25,6 +25,8 @@ function getHou() {
 function startTimer() {
     console.log("partito");
 
+    var audio = new Audio("/alarm.mp3");
+
     document.getElementById("bottone").disabled = true;
 
     var s = getSec() + getMin()*60 + getHou()*3600;
@@ -37,6 +39,7 @@ function startTimer() {
             document.getElementById("timer").innerHTML = "timer finito";
             clearInterval(x);
             document.getElementById("bottone").disabled = false;
+            audio.play();
         }
     }, 1000);
 }
@@ -44,5 +47,6 @@ function startTimer() {
 function restart() {
     location.reload();
 }
+
 
 
