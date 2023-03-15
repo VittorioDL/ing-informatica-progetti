@@ -1,6 +1,6 @@
 #include <math.h>
 
-int detSairus(float A[3][3]);
+float detSairus(float A[3][3]);
 float** dot(float** A, int a_row, int a_column, float** B, int b_row, int b_column);
 float **getCompl(float **matrix, int row, int column);
 float det(float **matrix, int row, int column);
@@ -22,7 +22,7 @@ float** getNullMatrix(int row, int column) {
     return matrix;
 }
 
-int detSairus(float **A) {
+float detSairus(float **A) {
     return A[0][0] * A[1][1] * A[2][2] + A[0][1] * A[1][2] * A[2][0] + A[0][2] * A[1][0] * A[2][1]
     - (A[0][1] * A[1][0] * A[2][2]) - (A[0][0] * A[1][2] * A[2][1]) - (A[0][2] * A[1][1] * A[2][0]);
 }
